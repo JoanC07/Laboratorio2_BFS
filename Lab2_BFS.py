@@ -1,8 +1,24 @@
 #Importamos la libreria Queve
 from queue import Queue
 
-
 class Grafo:
+    '''
+    Clase Grafo la cual nos va a representar a nuestro Grafo.
+
+    ...
+
+    Parametros
+    ----------
+        m_numero_nodos : int
+            Numero de nodos 
+        numero_nodos : int
+            Rango de nodos 
+        m_dirigido : boolean
+            Tipo de grafo si es dirigida o no dirigida.
+        m_lista_adyacencia : diccionario
+            Representación gráfica - Lista de adyacencia.
+    Establecimiento de los parametros para el metodo constructor (inicializado)
+    '''
     # Constructor
     # Establecimiento de los parametros para el metodo constructor (inicializado)
     def __init__(self, numero_nodos, dirigido=True):
