@@ -61,8 +61,15 @@ class Grafo:
 
     # Agregar borde al gráfico
     def agregar_borde(self, nodo1, nodo2, peso=1):
-        '''Recibe los nodos1 y nodo2 ademas del peso y se agregan a nuestra lista de
-         adyacencia con el nodo que corresponde'''
+        '''
+        Agregar borde al gráfo 
+        Parametros
+        ----------
+            nodo1: int
+            nodo2: int
+            peso: int
+            Peso y se agregan a nuestra lista de adyacencia con el nodo que corresponde.
+        '''
         #Agrega el nodo 2 a nuestra lista del nodo 1
         self.m_lista_adyacencia[nodo1].add((nodo2, peso))
 
