@@ -79,7 +79,17 @@ class Grafo:
 
     # Imprimir la representación gráfica
     def Imprimir_lista_adyacencia(self):
-        '''Nos imprime por pantalla el grafo generado nuestra lista de ayacencia, no rebibe parametros'''
+        '''
+        Nos imprime la representacion grafica por pantalla el grafo generado nuestra lista de ayacencia.
+
+        Parametros
+        ---------- 
+        No recibe
+
+        Retorna
+        ------
+        Nada
+        '''
         #Recorre la lista
         for llave in self.m_lista_adyacencia.keys():
             #Imprime nuestro nodo
@@ -88,8 +98,29 @@ class Grafo:
         # Función que imprime el recorrido BFS de un vértice fuente dado. bfs_traversal(int s)
         # recorre los vértices alcanzables desde s.
     def bfs_transversal(self, nodo_de_inicio):
-        '''Genera una lista de las colas visitadas y muestra el recorrido realizado, recibe el 
-        valor de nodo_de_inicio.'''
+        '''
+        Función que imprime el recorrido BFS de un vértice fuente dado. bfs_traversal(int s) y
+        recorre los vértices alcanzables desde s.
+        Genera una lista de las colas visitadas y muestra el recorrido realizado, recibe el 
+        valor de nodo_de_inicio.
+
+        Parametros
+        -----------
+        nodo_de_inicio : int
+
+        Retorna
+        -------
+        Recorido del nodo
+
+
+         Añade el nodo_de_inicio a la cola y a la lista de visitas.
+
+        Bucle de los nodos.
+            Quitar un vértice de la cola.
+            Imprimirlo vertice.
+            Obtener todos los vértices adyacentes del vértice de la cola. 
+                    Si un vértice adyacente ha sido visitado, entonces se marca como visitado y pongalo en cola.
+        '''
         # Conjunto de nodos visitados para evitar bucles
         visitado = set()
         cola = Queue()
