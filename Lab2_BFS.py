@@ -56,8 +56,8 @@ class Grafo:
 
     def agregar_borde(self, nodo1, nodo2, peso=1):
         '''
-        Agregar borde al gráfo 
-        Parametros
+        Agregar borde al gráfo. 
+        Parametros.
         ----------
             nodo1: int
             nodo2: int
@@ -75,13 +75,13 @@ class Grafo:
         '''
         Nos imprime la representacion grafica por pantalla el grafo generado nuestra lista de ayacencia.
 
-        Parametros
+        Parametros.
         ---------- 
-        No recibe
+        No recibe.
 
-        Retorna
+        Retorna.
         ------
-        Nada
+        Nada.
         '''
         #Recorre la lista de adyacencia
         for llave in self.m_lista_adyacencia.keys():
@@ -157,7 +157,7 @@ if __name__ == "__main__":
     grafo1.Imprimir_lista_adyacencia()
 
     print("A continuación se muestra el recorrido primero en anchura"
-          " (a partir del vértice 0)")
+          " (a partir del vértice 0).")
 
     grafo1.bfs_transversal(0)
     print()
@@ -175,7 +175,7 @@ if __name__ == "__main__":
     grafo2.Imprimir_lista_adyacencia()
 
     print("A continuación se muestra el recorrido primero en anchura"
-          " (a partir del vértice 0)")
+          " (a partir del vértice 0).")
 
     # Imprime toda la lista de colas.
 
@@ -196,7 +196,7 @@ if __name__ == "__main__":
     grafo3.Imprimir_lista_adyacencia()
 
     print("A continuación se muestra el recorrido primero en anchura"
-          " (a partir del vértice 0)")
+          " (a partir del vértice 0).")
 
     grafo3.bfs_transversal(0)
     print()
@@ -216,7 +216,7 @@ if __name__ == "__main__":
     grafo4.Imprimir_lista_adyacencia()
 
     print("A continuación se muestra el recorrido primero en anchura"
-          " (a partir del vértice 0)")
+          " (a partir del vértice 0).")
 
     grafo4.bfs_transversal(0)
     print()
@@ -237,7 +237,7 @@ if __name__ == "__main__":
     grafo5.Imprimir_lista_adyacencia()
 
     print("A continuación se muestra el recorrido primero en anchura"
-          " (a partir del vértice 0)")
+          " (a partir del vértice 0).")
 
     grafo5.bfs_transversal(0)
     print()
