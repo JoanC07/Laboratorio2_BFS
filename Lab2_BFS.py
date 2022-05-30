@@ -153,23 +153,21 @@ if __name__ == "__main__":
     Cantidad de nodos va a tener y agrega bordes a nuestro Grafo (3, 1).
     Imprime la lista de adyacencia en la forma nodo n: {(nodo, peso)} e imprime la lista de colas. 
     '''
-    # Se crea la instancia de la clase `Grafo`.
-    # Tiene 5 nodos y es no dirigido
-    g = Grafo(5, dirigido = False)
-    # Cuantos nodos va a tener (nodo maximo) 0-3
-    # Estados y peso (costo hacer referenia al Ejemplo de los canibales)
-    #Agrega los bordes a nuestro Grafo
-    g.agregar_borde(3, 1)
-    g.agregar_borde(2, 2)
-    g.agregar_borde(1, 4)
-    g.agregar_borde(0, 4)
-    g.agregar_borde(2, 3)
+    print("----------------------------------------------------------")
+    print("Caso 1")
+    grafo1 = Grafo(5, dirigido=False)
+    # Cada uno agrega los bordes del grafo con el peso
+    grafo1.agregar_borde(3, 1)
+    grafo1.agregar_borde(2, 2)
+    grafo1.agregar_borde(1, 4)
+    grafo1.agregar_borde(0, 2)
+    grafo1.agregar_borde(2, 3)
 
-    # Imprime la lista de adyacencia en la forma nodo n: {(nodo, peso)}
-    g.Imprimir_lista_adyacencia()
+    # Imprime la lista de colas
+    grafo1.Imprimir_lista_adyacencia()
 
     print("A continuación se muestra el recorrido primero en anchura"
           " (a partir del vértice 0)")
-    #Imprime toda la lista de colas
-    g.bfs_transversal(0)
+
+    grafo1.bfs_transversal(0)
     print()
