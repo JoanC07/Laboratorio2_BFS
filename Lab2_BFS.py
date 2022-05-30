@@ -191,3 +191,63 @@ if __name__ == "__main__":
 
     grafo2.bfs_transversal(0)
     print()
+
+    print("----------------------------------------------------------")
+    print("Caso 3")
+    grafo3 = Grafo(5, dirigido=False)
+    # Cada uno agrega los bordes del grafo con el peso
+    grafo3.agregar_borde(2, 0)
+    grafo3.agregar_borde(4, 2)
+    grafo3.agregar_borde(1, 4)
+    grafo3.agregar_borde(0, 3)
+    grafo3.agregar_borde(3, 1)
+
+    # Imprime la lista de colas
+    grafo3.Imprimir_lista_adyacencia()
+
+    print("A continuación se muestra el recorrido primero en anchura"
+          " (a partir del vértice 0)")
+
+    grafo3.bfs_transversal(0)
+    print()
+
+    print("----------------------------------------------------------")
+    print("Caso 4")
+    grafo4 = Grafo(6, dirigido=False)
+    # Cada uno agrega los bordes del grafo con el peso
+    grafo4.agregar_borde(2, 1)
+    grafo4.agregar_borde(5, 2)
+    grafo4.agregar_borde(3, 4)
+    grafo4.agregar_borde(0, 5)
+    grafo4.agregar_borde(2, 2)
+    grafo4.agregar_borde(1, 3)
+
+    # Imprime la lista de colas
+    grafo4.Imprimir_lista_adyacencia()
+
+    print("A continuación se muestra el recorrido primero en anchura"
+          " (a partir del vértice 0)")
+
+    grafo4.bfs_transversal(0)
+    print()
+
+    print("----------------------------------------------------------")
+    print("Caso 5")
+    grafo5 = Grafo(7, dirigido=False)
+    # Cada uno agrega los bordes del grafo con el peso
+    grafo5.agregar_borde(1, 3)
+    grafo5.agregar_borde(2, 2)
+    grafo5.agregar_borde(5, 4)
+    grafo5.agregar_borde(0, 5)
+    grafo5.agregar_borde(3, 1)
+    grafo5.agregar_borde(6, 0)
+    grafo5.agregar_borde(4, 6)
+
+    # Imprime la lista de colas
+    grafo5.Imprimir_lista_adyacencia()
+
+    print("A continuación se muestra el recorrido primero en anchura"
+          " (a partir del vértice 0)")
+
+    grafo5.bfs_transversal(0)
+    print()
