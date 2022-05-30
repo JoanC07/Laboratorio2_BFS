@@ -146,7 +146,13 @@ class Grafo:
 
 
 if __name__ == "__main__":
-   
+
+    '''
+    Se crea la instancia de la clase `Grafo`. 
+    Nodo de 5 y no es dirigido Grafo(5, dirigido = False).
+    Cantidad de nodos va a tener y agrega bordes a nuestro Grafo (3, 1).
+    Imprime la lista de adyacencia en la forma nodo n: {(nodo, peso)} e imprime la lista de colas. 
+    '''
     # Se crea la instancia de la clase `Grafo`.
     # Tiene 5 nodos y es no dirigido
     g = Grafo(5, dirigido = False)
