@@ -171,3 +171,23 @@ if __name__ == "__main__":
 
     grafo1.bfs_transversal(0)
     print()
+
+    print("----------------------------------------------------------")
+    print("Caso 2")
+    grafo2 = Grafo(4, dirigido=False)
+    # Cada uno agrega los bordes del grafo con el peso
+    grafo2.agregar_borde(2, 1)
+    grafo2.agregar_borde(1, 2)
+    grafo2.agregar_borde(0, 2)
+    grafo2.agregar_borde(3, 3)
+
+    # Imprime la lista de colas
+    grafo2.Imprimir_lista_adyacencia()
+
+    print("A continuación se muestra el recorrido primero en anchura"
+          " (a partir del vértice 0)")
+
+    # Imprime toda la lista de colas.
+
+    grafo2.bfs_transversal(0)
+    print()
