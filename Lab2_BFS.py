@@ -34,7 +34,19 @@ class Grafo:
     # Constructor
     # Establecimiento de los parametros para el metodo constructor (inicializado)
     def __init__(self, numero_nodos, dirigido=True):
-        '''Recibe el numero de nodos de nuestra clase principal Grafos - Constructor con parametros'''
+        '''
+        Recibe el numero de nodos de nuestra clase principal Grafos. 
+
+        Parametros.
+            m_numero_nodos : int
+                 Numero de nodos 
+            numero_nodos : int
+                Rango de nodos 
+            m_dirigido : boolean
+                Tipo de grafo si es dirigida o no dirigida.
+            m_lista_adyacencia : diccionario
+                Representación gráfica - Lista de adyacencia.
+        '''
         # Numero de nodos y creacion de rango de nodos
         self.m_numero_nodos = numero_nodos
         # Rango de nodos
