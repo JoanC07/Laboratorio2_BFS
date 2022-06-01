@@ -134,7 +134,6 @@ class Grafo:
                     #Se marca el nodo
                     visitado.add(siguiente_nodo)
 
-
 if __name__ == "__main__":
 
     '''
