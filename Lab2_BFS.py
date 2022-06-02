@@ -163,10 +163,10 @@ if __name__ == "__main__":
 
     print("----------------------------------------------------------")
     print("Caso 2")
-    grafo2 = Grafo(4, dirigido=False)
+    grafo2 = Grafo(4, dirigido=True)
     # Cada uno agrega los bordes del grafo con el peso
-    grafo2.agregar_borde(2, 1, 2)
-    grafo2.agregar_borde(1, 2, 1)
+    grafo2.agregar_borde(1, 2, 2)
+    grafo2.agregar_borde(2, 3, 1)
     grafo2.agregar_borde(0, 2, 3)
     grafo2.agregar_borde(3, 1, 1)
 
@@ -183,13 +183,15 @@ if __name__ == "__main__":
 
     print("----------------------------------------------------------")
     print("Caso 3")
-    grafo3 = Grafo(5, dirigido=False)
+    grafo3 = Grafo(6, dirigido=True)
     # Cada uno agrega los bordes del grafo con el peso
     grafo3.agregar_borde(2, 0)
     grafo3.agregar_borde(4, 2)
     grafo3.agregar_borde(1, 4)
     grafo3.agregar_borde(0, 3)
     grafo3.agregar_borde(3, 1)
+    grafo3.agregar_borde(5, 3)
+    grafo3.agregar_borde(3, 4)
 
     # Imprime la lista de colas
     grafo3.Imprimir_lista_adyacencia()
