@@ -185,13 +185,13 @@ if __name__ == "__main__":
     print("Caso 3")
     grafo3 = Grafo(6, dirigido=True)
     # Cada uno agrega los bordes del grafo con el peso
-    grafo3.agregar_borde(2, 0)
-    grafo3.agregar_borde(4, 2)
-    grafo3.agregar_borde(1, 4)
-    grafo3.agregar_borde(0, 3)
-    grafo3.agregar_borde(3, 1)
-    grafo3.agregar_borde(5, 3)
-    grafo3.agregar_borde(3, 4)
+    grafo3.agregar_borde(2, 1)
+    grafo3.agregar_borde(3, 2)
+    grafo3.agregar_borde(3, 5)
+    grafo3.agregar_borde(1, 3)
+    grafo3.agregar_borde(5, 1)
+    grafo3.agregar_borde(0, 2)
+    grafo3.agregar_borde(4, 0)
 
     # Imprime la lista de colas
     grafo3.Imprimir_lista_adyacencia()
